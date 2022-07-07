@@ -1,7 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutusComponent } from './Frontend/Components/aboutus/aboutus.component';
+import { AdminloginComponent } from './Frontend/Components/adminlogin/adminlogin.component';
+import { CarouselComponent } from './Frontend/Components/carousel/carousel.component';
+import { CustomerformComponent } from './Frontend/Components/customerform/customerform.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  {path:'Admin Login', component: AdminloginComponent},
+  {path:'', component: CarouselComponent},
+  {path:'custform', component: CustomerformComponent},
+  {path:'aboutus', component: AboutusComponent},
+  {path:'bckhome', component:CarouselComponent}
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
