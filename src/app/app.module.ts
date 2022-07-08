@@ -10,6 +10,8 @@ import { AdminloginComponent } from './Frontend/Components/adminlogin/adminlogin
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { CustomerformComponent } from './Frontend/Components/customerform/customerform.component';
 import { AboutusComponent } from './Frontend/Components/aboutus/aboutus.component';
+import { ComplainComponent } from './Frontend/Components/complain/complain.component';
+import { PlansComponent } from './Frontend/Components/plans/plans.component';
 
 
 
@@ -20,7 +22,9 @@ import { AboutusComponent } from './Frontend/Components/aboutus/aboutus.componen
     CarouselComponent,
     AdminloginComponent,
     CustomerformComponent,
-    AboutusComponent
+    AboutusComponent,
+    ComplainComponent,
+    PlansComponent
     
   ],
   imports: [

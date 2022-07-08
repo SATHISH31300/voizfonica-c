@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './Frontend/Components/aboutus/aboutus.component';
 import { AdminloginComponent } from './Frontend/Components/adminlogin/adminlogin.component';
 import { CarouselComponent } from './Frontend/Components/carousel/carousel.component';
+import { ComplainComponent } from './Frontend/Components/complain/complain.component';
 import { CustomerformComponent } from './Frontend/Components/customerform/customerform.component';
+import { PlansComponent } from './Frontend/Components/plans/plans.component';
 
 
 const routes: Routes = [
@@ -11,7 +13,8 @@ const routes: Routes = [
   {path:'', component: CarouselComponent},
   {path:'custform', component: CustomerformComponent},
   {path:'aboutus', component: AboutusComponent},
-  {path:'bckhome', component:CarouselComponent}
+  {path:'bckhome', component:CarouselComponent},
+  {path:'plans', component: PlansComponent}
   
 ];
 
