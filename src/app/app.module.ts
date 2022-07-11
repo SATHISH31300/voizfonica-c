@@ -12,6 +12,14 @@ import { CustomerformComponent } from './Frontend/Components/customerform/custom
 import { AboutusComponent } from './Frontend/Components/aboutus/aboutus.component';
 import { ComplainComponent } from './Frontend/Components/complain/complain.component';
 import { PlansComponent } from './Frontend/Components/plans/plans.component';
+import { SignupComponent } from './Frontend/Components/signup/signup.component';
+import { PrepaidplansComponent } from './Frontend/Components/prepaidplans/prepaidplans.component';
+import { PostpaidplansComponent } from './Frontend/Components/postpaidplans/postpaidplans.component';
+import { DongleplansComponent } from './Frontend/Components/dongleplans/dongleplans.component';
+import { PaymentComponent } from './Frontend/Components/payment/payment.component';
+import { ExistinguserloginComponent } from './Frontend/Components/existinguserlogin/existinguserlogin.component';
+import { CustomerloginnavbarComponent } from './Frontend/Components/customerloginnavbar/customerloginnavbar.component';
+import { RechargedoneComponent } from './Frontend/Components/rechargedone/rechargedone.component';
 
 
 
@@ -24,7 +32,15 @@ import { PlansComponent } from './Frontend/Components/plans/plans.component';
     CustomerformComponent,
     AboutusComponent,
     ComplainComponent,
-    PlansComponent
+    PlansComponent,
+    SignupComponent,
+    PrepaidplansComponent,
+    PostpaidplansComponent,
+    DongleplansComponent,
+    PaymentComponent,
+    ExistinguserloginComponent,
+    CustomerloginnavbarComponent,
+    RechargedoneComponent
     
   ],
   imports: [
@@ -32,7 +48,8 @@ import { PlansComponent } from './Frontend/Components/plans/plans.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+  
     
   ],
   providers: [],
