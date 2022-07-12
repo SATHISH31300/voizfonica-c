@@ -7,18 +7,21 @@ import { ComplainComponent } from './Frontend/Components/complain/complain.compo
 import { CustomerformComponent } from './Frontend/Components/customerform/customerform.component';
 import { CustomerloginnavbarComponent } from './Frontend/Components/customerloginnavbar/customerloginnavbar.component';
 import { DongleplansComponent } from './Frontend/Components/dongleplans/dongleplans.component';
-import { ExistinguserloginComponent } from './Frontend/Components/existinguserlogin/existinguserlogin.component';
 import { PaymentComponent } from './Frontend/Components/payment/payment.component';
 import { PlansComponent } from './Frontend/Components/plans/plans.component';
 import { PostpaidplansComponent } from './Frontend/Components/postpaidplans/postpaidplans.component';
 import { PrepaidplansComponent } from './Frontend/Components/prepaidplans/prepaidplans.component';
 import { RechargedoneComponent } from './Frontend/Components/rechargedone/rechargedone.component';
 import { SignupComponent } from './Frontend/Components/signup/signup.component';
+import { UserloginComponent } from './Frontend/Components/userlogin/userlogin.component';
+
+
 
 
 const routes: Routes = [
-  {path:'existinguserlogin', component:ExistinguserloginComponent},
+
   {path:'Admin Login', component: AdminloginComponent},
+  {path:'userlogin', component:UserloginComponent},
   {path:'', component: CarouselComponent},
   {path:'custform', component: CustomerformComponent},
   {path:'aboutus', component: AboutusComponent},
@@ -26,6 +29,7 @@ const routes: Routes = [
   {path:'plans', component: PlansComponent},
   {path:'signup',component:SignupComponent},
   {path:'complain', component:ComplainComponent},
+  {path:'login/signuppage', component:SignupComponent},
   {path:'plans/prepaidplans', component:PrepaidplansComponent},
   {path:'plans/prepaidplans/chosen',component:PaymentComponent},
   {path:'plans/postpaidplans', component: PostpaidplansComponent},
@@ -40,7 +44,8 @@ const routes: Routes = [
   {path:'paymentcompleted',component:RechargedoneComponent},
   {path:'contactus/usefullink/aboutus', component:AboutusComponent},
   {path:'contactus/usefullink/services', component:PlansComponent},
-  {path:'contactus/usefullink/contactus', component: CustomerformComponent}
+  {path:'contactus/usefullink/contactus', component: CustomerformComponent},
+  
 
   
   

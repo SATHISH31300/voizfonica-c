@@ -1,3 +1,9 @@
+.gradient-custom {
+    
+    background: linear-gradient(to right, rgb(254, 201, 121), rgb(245, 183, 241))
+
+    }
+
 *{
     margin: 0;
     padding: 0;

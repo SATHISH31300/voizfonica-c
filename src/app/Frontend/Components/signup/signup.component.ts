@@ -22,8 +22,9 @@ export class SignupComponent implements OnInit {
   }
 
   public signup(){
-    alert('User Created')
+    alert('User account Created')
     console.log(this.newuser);
 }
+
 
 }

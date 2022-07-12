@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Frontend/Components/navbar/navbar.component';
 import { CarouselComponent } from './Frontend/Components/carousel/carousel.component';
 import { AdminloginComponent } from './Frontend/Components/adminlogin/adminlogin.component';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { CustomerformComponent } from './Frontend/Components/customerform/customerform.component';
 import { AboutusComponent } from './Frontend/Components/aboutus/aboutus.component';
 import { ComplainComponent } from './Frontend/Components/complain/complain.component';
@@ -17,9 +17,10 @@ import { PrepaidplansComponent } from './Frontend/Components/prepaidplans/prepai
 import { PostpaidplansComponent } from './Frontend/Components/postpaidplans/postpaidplans.component';
 import { DongleplansComponent } from './Frontend/Components/dongleplans/dongleplans.component';
 import { PaymentComponent } from './Frontend/Components/payment/payment.component';
-import { ExistinguserloginComponent } from './Frontend/Components/existinguserlogin/existinguserlogin.component';
 import { CustomerloginnavbarComponent } from './Frontend/Components/customerloginnavbar/customerloginnavbar.component';
 import { RechargedoneComponent } from './Frontend/Components/rechargedone/rechargedone.component';
+import { LoginComponent } from './Frontend/Components/login/login.component';
+import { UserloginComponent } from './Frontend/Components/userlogin/userlogin.component';
 
 
 
@@ -38,15 +39,16 @@ import { RechargedoneComponent } from './Frontend/Components/rechargedone/rechar
     PostpaidplansComponent,
     DongleplansComponent,
     PaymentComponent,
-    ExistinguserloginComponent,
     CustomerloginnavbarComponent,
-    RechargedoneComponent
+    RechargedoneComponent,
+    LoginComponent,
+    UserloginComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule,   
     ReactiveFormsModule,
     HttpClientModule,
   
