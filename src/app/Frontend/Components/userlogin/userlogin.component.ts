@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../../models/user';
-import { ServicesService } from '../service.service';
+import { ServicesService } from '../services.service';
 
 @Component({
   selector: 'app-userlogin',
@@ -12,7 +12,7 @@ export class UserloginComponent implements OnInit {
 
   user:User=new User();
 
-  constructor(private serviceService:ServicesService, private router:Router) { }
+  constructor(private servicesService:ServicesService,private router:Router) { }
 
 
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class UserloginComponent implements OnInit {
 
   userLogin(){
     console.log(this.user);
-    this.serviceService.loginUser(this.user).subscribe(data=>{
+    this.servicesService.loginUser(this.user).subscribe(data=>{
       this.router.navigate(['useraccount'])
     },error=>alert("Sorry Please enter correct id and password"));
   }

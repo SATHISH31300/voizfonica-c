@@ -19,8 +19,10 @@ import { DongleplansComponent } from './Frontend/Components/dongleplans/donglepl
 import { PaymentComponent } from './Frontend/Components/payment/payment.component';
 import { CustomerloginnavbarComponent } from './Frontend/Components/customerloginnavbar/customerloginnavbar.component';
 import { RechargedoneComponent } from './Frontend/Components/rechargedone/rechargedone.component';
-import { LoginComponent } from './Frontend/Components/login/login.component';
 import { UserloginComponent } from './Frontend/Components/userlogin/userlogin.component';
+import { LandingserviceComponent } from './Frontend/Components/landingservice/landingservice.component';
+import { UserlandingComponent } from './Frontend/Components/userlanding/userlanding.component';
+
 
 
 
@@ -41,8 +43,10 @@ import { UserloginComponent } from './Frontend/Components/userlogin/userlogin.co
     PaymentComponent,
     CustomerloginnavbarComponent,
     RechargedoneComponent,
-    LoginComponent,
-    UserloginComponent
+   LandingserviceComponent,
+    UserloginComponent,
+    UserlandingComponent,
+    
     
   ],
   imports: [
@@ -50,7 +54,7 @@ import { UserloginComponent } from './Frontend/Components/userlogin/userlogin.co
     AppRoutingModule,
     FormsModule,   
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   
     
   ],

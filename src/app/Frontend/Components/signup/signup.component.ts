@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { NewUser } from '../../models/newUser';
+import { ServicesService } from '../services.service';
 
 
 @Component({
@@ -7,24 +11,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  newuser={
-    firstname:'',
-    lastname:'',
-    email:'',
-    phno:'',
-    password:'',
-    confirmpassword:''
-  }
+  newuser:NewUser=new NewUser();
 
-  constructor() { }
+
+  constructor(private servicesService:ServicesService ,private router:Router) { }
 
   ngOnInit(): void {
   }
 
-  public signup(){
-    alert('User account Created')
+  signup(){
+    // alert('User Created')
     console.log(this.newuser);
+    this.servicesService.signupUser(this.newuser).subscribe (data=>{
+      alert("User Created")
+      this.router.navigate(['userlogin'])
+    },error=>alert("Email Already Exists"));
 }
-
+ 
 
 }

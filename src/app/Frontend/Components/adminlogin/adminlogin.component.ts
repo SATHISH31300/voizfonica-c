@@ -13,3 +13,9 @@ export class AdminloginComponent implements OnInit {
   }
 
 }
+// adminLogin(){
+//   console.log(this.user);
+//   this.servicesService.loginAdmin(this.user).subscribe(data=>{
+//     alert("Login successfull")
+//   },error=>alert("Sorry please enter correct id and password"));
+// }
